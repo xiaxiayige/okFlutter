@@ -1,4 +1,4 @@
-package com.xiaxiayige.plugin
+package com.xiaxiayige.okflutter
 
 
 object Constant {

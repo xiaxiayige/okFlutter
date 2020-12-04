@@ -1,4 +1,4 @@
-package com.xiaxiayige.plugin;
+package com.xiaxiayige.okflutter;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;

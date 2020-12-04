@@ -1,4 +1,4 @@
-package com.xiaxiayige.plugin.bean
+package com.xiaxiayige.okflutter.bean
 
 class PackagesItem(val resultName:String,
                    val targetUrl:String,

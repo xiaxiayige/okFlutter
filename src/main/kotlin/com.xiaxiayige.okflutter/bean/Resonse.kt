@@ -1,6 +1,6 @@
-package com.xiaxiayige.plugin.bean
+package com.xiaxiayige.okflutter.bean
 
-import java.util.ArrayList
+import com.xiaxiayige.okflutter.bean.PackagesItem
 
 class Resonse( val errCode: Int,val errorMsg: String, val data: MutableList<PackagesItem>?) {
 }

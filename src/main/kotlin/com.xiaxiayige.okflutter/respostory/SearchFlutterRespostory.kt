@@ -1,11 +1,9 @@
-package com.xiaxiayige.plugin.respostory
+package com.xiaxiayige.okflutter.respostory
 
-import com.xiaxiayige.plugin.bean.PackagesItem
-import com.xiaxiayige.plugin.bean.Resonse
-import com.xiaxiayige.plugin.utils.HtmlParseUtil
+import com.xiaxiayige.okflutter.bean.PackagesItem
+import com.xiaxiayige.okflutter.bean.Resonse
+import com.xiaxiayige.okflutter.utils.HtmlParseUtil
 import io.reactivex.*
-import io.reactivex.schedulers.Schedulers
-import java.util.concurrent.TimeoutException
 
 //Flutter 依赖搜索
 object SearchFlutterRespostory {

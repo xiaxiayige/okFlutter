@@ -1,10 +1,9 @@
-package com.xiaxiayige.plugin.utils
+package com.xiaxiayige.okflutter.utils
 
-import com.xiaxiayige.plugin.Constant
-import com.xiaxiayige.plugin.bean.PackagesItem
+import com.xiaxiayige.okflutter.Constant
+import com.xiaxiayige.okflutter.bean.PackagesItem
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Element
-import java.io.IOException
 
 object HtmlParseUtil {
 

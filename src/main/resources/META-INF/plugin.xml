@@ -20,8 +20,8 @@
 
     <actions>
         <!-- Add your actions here -->
-        <action id="com.xiaxiayige.okflutter" class="com.xiaxiayige.okflutter.MainAction" text="CreateMvp"
-                description="Test gui form">
+        <action id="com.xiaxiayige.okflutter" class="com.xiaxiayige.okflutter.MainAction" text="okFlutter"
+                description="Ok,Flutter">
             <add-to-group group-id="ToolsMenu" anchor="first"/>
         </action>
     </actions>

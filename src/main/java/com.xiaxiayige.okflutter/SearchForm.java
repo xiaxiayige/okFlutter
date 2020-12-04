@@ -1,18 +1,12 @@
-package com.xiaxiayige.plugin;
+package com.xiaxiayige.okflutter;
 
-import com.intellij.ui.components.JBLabel;
 import com.intellij.ui.components.JBList;
 import com.intellij.ui.components.JBScrollPane;
 import com.intellij.ui.components.panels.HorizontalLayout;
-import com.jgoodies.forms.layout.FormLayout;
-import com.xiaxiayige.plugin.bean.PackagesItem;
-import com.xiaxiayige.plugin.bean.Resonse;
-import com.xiaxiayige.plugin.respostory.SearchFlutterRespostory;
+import com.xiaxiayige.okflutter.bean.PackagesItem;
+import com.xiaxiayige.okflutter.respostory.SearchFlutterRespostory;
 import io.reactivex.functions.Consumer;
-import kotlinx.coroutines.flow.Flow;
 import org.jetbrains.annotations.NotNull;
-import org.reactivestreams.Subscriber;
-import org.reactivestreams.Subscription;
 
 import javax.swing.*;
 import java.awt.*;
