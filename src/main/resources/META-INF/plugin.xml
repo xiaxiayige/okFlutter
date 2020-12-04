@@ -1,0 +1,28 @@
+<idea-plugin>
+    <id>com.xiaxiayige.utils.mvpAutoGenerate</id>
+    <name>OkFlutter</name>
+    <vendor email="xiaxiayige@163.com" url="https://www.github.com/xiaxiayige">xiaxiayige</vendor>
+
+    <description><![CDATA[
+    OkFlutter
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!--    <depends>com.intellij.modules.platform</depends>-->
+    <depends>org.jetbrains.android</depends>
+
+    <depends>com.intellij.modules.androidstudio</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="com.xiaxiayige.okflutter" class="com.xiaxiayige.okflutter.MainAction" text="CreateMvp"
+                description="Test gui form">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
