@@ -20,7 +20,7 @@
 
     <actions>
         <!-- Add your actions here -->
-        <action id="com.xiaxiayige.okflutter" class="com.xiaxiayige.okflutter.MainAction" text="okFlutter"
+        <action id="com.xiaxiayige.okflutter" class="com.xiaxiayige.okflutter.MainAction" text="Ok,Flutter"
                 description="Ok,Flutter">
             <add-to-group group-id="ToolsMenu" anchor="first"/>
         </action>
