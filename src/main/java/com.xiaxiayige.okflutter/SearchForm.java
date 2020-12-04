@@ -47,7 +47,6 @@ public class SearchForm extends JFrame {
                             public void accept(List<PackagesItem> packagesItems) throws Exception {
                                 dataList.addAll(packagesItems);
                                 showData();
-
                             }
                         }, new Consumer<Throwable>() {
                             @Override
@@ -66,14 +65,15 @@ public class SearchForm extends JFrame {
 
 
     private void showData() {
+        System.out.println("showData----------------------");
         contents.removeAll();
         JBList<JPanel> jbList = new JBList();
         jbList.setEmptyText(emptyText);
         if (dataList != null && dataList.size() > 0) {
-//            for (PackagesItem packagesItem : dataList) {
-//                JPanel item = _buildItemPanel(packagesItem);
-//                jbList.add(item);
-//            }
+            for (PackagesItem packagesItem : dataList) {
+                JPanel item = _buildItemPanel(packagesItem);
+                jbList.add(item);
+            }
             JPanel item = _buildItemPanel(dataList.get(0));
             jbList.add(item);
         }

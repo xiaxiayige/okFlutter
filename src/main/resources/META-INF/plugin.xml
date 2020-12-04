@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>com.xiaxiayige.utils.mvpAutoGenerate</id>
+    <id>com.xiaxiayige.okflutter</id>
     <name>OkFlutter</name>
     <vendor email="xiaxiayige@163.com" url="https://www.github.com/xiaxiayige">xiaxiayige</vendor>
 
