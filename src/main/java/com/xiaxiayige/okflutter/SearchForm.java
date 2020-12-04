@@ -3,6 +3,7 @@ package com.xiaxiayige.okflutter;
 import com.intellij.ui.components.JBList;
 import com.intellij.ui.components.JBScrollPane;
 import com.intellij.ui.components.panels.HorizontalLayout;
+import com.intellij.ui.components.panels.VerticalLayout;
 import com.xiaxiayige.okflutter.bean.PackagesItem;
 import com.xiaxiayige.okflutter.respostory.SearchFlutterRespostory;
 import io.reactivex.functions.Consumer;
@@ -20,7 +21,7 @@ public class SearchForm extends JFrame {
     private JTextField editText;
     private JButton btnSearch;
     private JPanel contents;
-    private String emptyText = null;
+    private String emptyText = "Nothing to show";
 
     private List<PackagesItem> dataList = new ArrayList<>();
 
@@ -67,19 +68,30 @@ public class SearchForm extends JFrame {
     private void showData() {
         System.out.println("showData----------------------");
         contents.removeAll();
-        JBList<JPanel> jbList = new JBList();
-        jbList.setEmptyText(emptyText);
-        if (dataList != null && dataList.size() > 0) {
+        contents.setLayout(new VerticalLayout(0));
+        JPanel jbList = new JPanel();
+        jbList.setLayout(new VerticalLayout(10));
+        if(dataList==null || dataList.size()<=0){
+
+        }else{
+            emptyText="";
+
+            jbList.setBackground(Color.RED);
             for (PackagesItem packagesItem : dataList) {
                 JPanel item = _buildItemPanel(packagesItem);
                 jbList.add(item);
+                jbList.add(item);
             }
-            JPanel item = _buildItemPanel(dataList.get(0));
-            jbList.add(item);
+
         }
 
+
+
         JBScrollPane scrollPane = new JBScrollPane(jbList);
-        Dimension preferredSize = new Dimension(contents.getWidth() - 16, contents.getHeight() - 16);
+
+
+        Dimension preferredSize = new Dimension(contents.getWidth() - 16, contents.getHeight() - 16*2);
+        scrollPane.setBackground(Color.BLACK);
         scrollPane.setPreferredSize(preferredSize);
         contents.add(scrollPane);
         contents.revalidate();
@@ -88,18 +100,17 @@ public class SearchForm extends JFrame {
     @NotNull
     private JPanel _buildItemPanel(PackagesItem packagesItem) {
         JPanel item = new JPanel();
-        item.setLayout(new HorizontalLayout(20));
+        item.setLayout(new HorizontalLayout(16));
         item.add(new JLabel("" + packagesItem.getResultName()));
-        item.add(new JLabel("latest version:" + packagesItem.getVersion()));
-        item.add(new JLabel("updateTime:" + packagesItem.getUpdateTime()));
-        item.add(new JLabel("like:" + packagesItem.getLike()));
-        item.add(new JLabel("pubPoint:" + packagesItem.getPubPoints()));
-        item.add(new JLabel("populaprty:" + packagesItem.getPopulaprty()));
+        item.add(new JLabel("latest version: " + packagesItem.getVersion()));
+        item.add(new JLabel("updateTime: " + packagesItem.getUpdateTime()));
+        item.add(new JLabel("like: " + packagesItem.getLike()));
+        item.add(new JLabel("pubPoint: " + packagesItem.getPubPoints()));
+        item.add(new JLabel("populaprty: " + packagesItem.getPopulaprty()));
         JButton copy_dependencies = new JButton("Copy dependencies");
-        copy_dependencies.setSize(80, 30);
+        copy_dependencies.setSize(60, 30);
         item.add(copy_dependencies);
-        item.setSize(-1, 50);
-
+        item.setSize(contents.getWidth() - 16, 50);
         return item;
     }
 
