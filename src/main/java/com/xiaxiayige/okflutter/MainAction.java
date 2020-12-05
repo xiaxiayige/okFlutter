@@ -8,9 +8,7 @@ public class MainAction extends AnAction {
 
     @Override
     public void actionPerformed(AnActionEvent e) {
-        System.out.println("Hello " + e);
-        SearchForm searchForm=new SearchForm();
+        SearchForm searchForm=new SearchForm(e.getProject());
         searchForm.setVisible(true);
-
     }
 }

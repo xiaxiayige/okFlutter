@@ -3,6 +3,7 @@ package com.xiaxiayige.okflutter.utils
 import com.xiaxiayige.okflutter.Constant
 import com.xiaxiayige.okflutter.bean.PackagesItem
 import org.jsoup.Jsoup
+import org.jsoup.helper.HttpConnection
 import org.jsoup.nodes.Element
 
 object HtmlParseUtil {
@@ -99,10 +100,14 @@ object HtmlParseUtil {
     fun getRequestUrl(queryString: String, sort: String) = Constant.SEARCH_URL + queryString + sort
 
 
-    fun getBodyElement(requestUrl: String) = Jsoup.connect(requestUrl)
-            .header(Constant.HEADER_USER_AGENT, Constant.HEADER_USER_AGENT_VALUE)
-            .timeout(Constant.TIME_OUT)
-            .get().body()
+    fun getBodyElement(requestUrl: String): Element {
+        val get = Jsoup.connect(requestUrl).header(Constant.HEADER_USER_AGENT, Constant.HEADER_USER_AGENT_VALUE)
+                .header("User-Agent",HttpConnection.DEFAULT_UA)
+                .timeout(Constant.TIME_OUT)
+                .get()
+        return get.body()
+    }
+
 
     fun getPackagesItem(bodyElement: Element) = bodyElement.getElementsByClass("packages-item")
 }
