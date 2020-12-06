@@ -153,8 +153,8 @@ public class SearchForm extends JFrame {
             }
         });
         copy_dependencies.setSize(60, 30);
-        item.add(gotoWebSite);
         item.add(copy_dependencies);
+        item.add(gotoWebSite);
         item.setSize(contents.getWidth() - 16, 50);
         return item;
     }
