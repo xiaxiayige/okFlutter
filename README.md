@@ -18,7 +18,7 @@ Ok,Flutter , quickly find and add Flutter dependencies(data source from '[https:
 
 
 
-![](img/1.gif)
+![img](img/1.gif)
 
 
 # Note
