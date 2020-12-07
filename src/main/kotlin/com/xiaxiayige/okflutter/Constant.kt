@@ -7,7 +7,7 @@ object Constant {
     const val TITLE = "Ok,Flutter"
 
     //https://pub.dev/packages?q=okToast
-    val SEARCH_URL = "$BASEURL/packages?q="
+    const  val SEARCH_URL = "$BASEURL/packages?q="
     val HEADER_USER_AGENT = "user-agent"
     val HEADER_USER_AGENT_VALUE =
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"

@@ -1,10 +1,21 @@
 <idea-plugin>
     <id>com.xiaxiayige.okflutter</id>
-    <name>OkFlutter</name>
+    <name>OK,Flutter</name>
     <vendor email="xiaxiayige@163.com" url="https://www.github.com/xiaxiayige">xiaxiayige</vendor>
 
     <description><![CDATA[
-    OkFlutter
+    OK,Flutter , quickly find and add Flutter dependencies(data source from '[https://pub.dev/](https://pub.dev/ "https://pub.dev/")' ) ,
+    Idea comes from okGradle plugin.<br/>
+
+    1.input keyworld and click search button<br/>
+
+    2. wait search result.<br/>
+
+    3.click 'copy dependencies' button<br/>
+
+    4.goto  'pubspec.yaml' Paste<br/>
+
+    5.final execution 'pub get'<br/>
     ]]></description>
 
     <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
@@ -20,8 +31,8 @@
 
     <actions>
         <!-- Add your actions here -->
-        <action id="com.xiaxiayige.okflutter" class="com.xiaxiayige.okflutter.MainAction" text="Ok,Flutter"
-                description="Ok,Flutter">
+        <action id="com.xiaxiayige.okflutter" class="com.xiaxiayige.okflutter.MainAction" text="OK,Flutter"
+                description="OK,Flutter">
             <add-to-group group-id="ToolsMenu" anchor="first"/>
         </action>
     </actions>

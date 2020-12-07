@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'com.xiaxiayige.okflutter'
-version '1.0-SNAPSHOT'
+version '1.0.0-SNAPSHOT'
 
 repositories {
     jcenter()
@@ -33,7 +33,7 @@ intellij {
 runIde {
     // Absolute path to installed target 3.5 Android Studio to use as IDE Development Instance
     // The "Contents" directory is macOS specific.
-    ideDirectory 'C:\\Program Files\\Android\\Android Studio'
+    ideDirectory 'D:\\AndroidStudio'
 }
 patchPluginXml {
     changeNotes """
