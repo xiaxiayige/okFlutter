@@ -50,6 +50,7 @@ public class SearchForm extends JFrame {
     private void initListener() {
         btnSearch.addActionListener(e -> {
             emptyText = "Searching...,Please wait";
+            dataList.clear();
             showData();
             keyworld = editText.getText().trim();
             if (keyworld.length() == 0) {
@@ -65,7 +66,6 @@ public class SearchForm extends JFrame {
                                 emptyText = throwable.getMessage();
                                 showData();
                             });
-//
                 }).start();
             }
         });
