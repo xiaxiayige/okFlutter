@@ -4,8 +4,8 @@
     <vendor email="xiaxiayige@163.com" url="https://www.github.com/xiaxiayige">xiaxiayige</vendor>
 
     <description><![CDATA[
-    OK,Flutter , quickly find and add Flutter dependencies(data source from '[https://pub.dev/](https://pub.dev/ "https://pub.dev/")' ) ,
-    Idea comes from okGradle plugin.<br/>
+    OK,Flutter , quickly find and add Flutter dependencies(data source from <a href='https://pub.dev/'>https://pub.dev/</a>),
+    Idea comes from okGradle plugin.more info see(<a href='https://github.com/xiaxiayige/okFlutter'>GitHub</a>)<br/>
 
     1.input keyworld and click search button<br/>
 
@@ -16,6 +16,7 @@
     4.goto  'pubspec.yaml' Paste<br/>
 
     5.final execution 'pub get'<br/>
+
     ]]></description>
 
     <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
